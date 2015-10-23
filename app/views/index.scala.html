@@ -1,0 +1,12 @@
+@(res: Map[String, String])
+
+@main("Welcome to Play") {
+
+    <h1>Step 5</h1>
+
+    <ul>
+    @res.map { case(question, response) =>
+      <li>@question : @response</li>
+    }
+    </ul>
+}
